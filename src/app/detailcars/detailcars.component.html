@@ -1,0 +1,26 @@
+
+<div class="container">
+   <div class="text-light">
+    <h1> Detail of cars</h1>
+   </div>
+
+    <div *ngIf="car" class="d-flex row bg-light" style="height: 350px;">
+        <div class="col col-4 fs-2">
+            <p>{{car.carid}}.</p>
+            <p> <img src="{{car.photo}}" alt="" width="70%"></p>
+        </div>
+        <div class="col col-6 mt-3" >
+            <p> Car made by:{{car.make}}</p>
+            <p> Model car  : {{car.model}}</p>
+            <p>years: {{car.years}}</p>
+            <b> <p>Description:</p> </b>
+            <p>{{car.desp}}</p>
+            <button type="button" class="btn btn-outline-secondary" (click)="goBack()">Go back</button>
+
+
+        </div>
+
+     </div>
+
+
+</div>

@@ -1,0 +1,37 @@
+        <div class="text-center fs-3 mt-4 bg-transparent bg-gradient text-white">
+            LIST OF CARS
+        </div>
+
+<div class="container">
+    <div class="row">
+      <div *ngFor="let car of cars" class="col col-lg-3 me-5 mt-5 ms-4 ">
+        <div class="card"  style="width: 18rem; height: 400px;">
+          <a routerLink="/carsdetail/{{car.carid}}">
+              <img src="{{car.photo}}"class="card-img-top" alt="" width="50px">
+             </a>
+            <div class="card-body">
+              <h5 class="card-title">{{car.carid}}.{{car.model}}</h5>
+              <p class="card-text">{{car.desp}}</p>
+              <a href="/carsdetail/{{car.carid}}" class="btn btn-primary">Details this cars!</a>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+
+   <!-- Car ID : {{ car.carid}}
+   Car make : {{car.make}}
+   car photo
+
+
+   Car model : {{car.model}}
+   Car years : {{car.years}}
+   car descrion : {{car.desp}} -->
+
+
+
+
+
+
+
